@@ -1,0 +1,8 @@
+#boxes {
+  margin: 1em 0;
+}
+
+.box {
+  background-color: black;
+  height: 20px;
+}
