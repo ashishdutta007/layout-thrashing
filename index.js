@@ -20,7 +20,7 @@ const boxes = Array.from(document.querySelectorAll(".box"));
 button.addEventListener("click", (event) => {
   // getting all widths beforehand
   // no repeated read-write cycles, so no reflows again and again
-  // as no change to the styles(metrics) take place
+  // this is because no change to the styles(metrics) took place
   // No Layout Thrashing
   const widths = boxes.map((element) => element.offsetWidth);
   boxes.forEach((element, index) => {
